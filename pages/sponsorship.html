@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorship Details</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/global.css">
+</head>
+
+<body class="flex">
+    <!-- Sidebar (Included in all pages) -->
+    <div id="sidebar-container"></div>
+
+    <div class="flex-col w-full lg:ml-64">
+        <!-- Header -->
+        <header class="relative min-h-[30vh] shadow-md bg-gray-200 flex justify-center items-center">
+            <!-- Background Image with Opacity -->
+            <div class="absolute inset-0 bg-hero bg-cover bg-center opacity-30"></div>
+            <button id="toggle-sidebar" class="lg:hidden absolute top-4 left-0 bg-[#068bb4] text-white p-2 rounded-lg z-40 ml-4">
+              <i class="fas fa-bars"></i>
+            </button>
+            <!-- Content -->
+            <div class="relative z-10">
+              <div class="container mx-auto flex justify-center flex-col gap-2 p-2 lg:flex-row items-center px-12">
+                <a href="../index.html"><img src="../assets/images/logo.png" alt="Conference Logo" class="w-48 md:54 lg:w-60"></a>
+                <div class="text-center lg:text-left flex flex-col gap-2 items-center lg:items-end px-2">
+                  <h1 class="text-3xl lg:text-4xl bg-gradient-to-b from-[#027fc7] to-[#24509c] text-transparent bg-clip-text font-bold lg:text-end">
+                    <span> National </span> <span> Conference on </span> <span>Wind Engineering</span>
+                  <!-- National Conference on Wind Engineering -->
+                  <div><span class="block lg:inline font-black">(NCWE-2025)</span></div>  
+                  </h1>
+                  <p
+                    class="text-lg lg:w-80 bg-blue-900 lg:text-end px-2 text-white p-1 rounded-lg lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-none lg:text-xl lg:rounded-tl-3xl font-black mt-2 text-center">
+                    14<sup>th</sup> & 15<sup>th</sup> November 2025
+                  </p>
+                  <p class="text-xl lg:text-2xl text-gray-800 lg:text-end font-medium">
+                    Department of Applied Mechanics, VNIT Nagpur
+                  </p>
+                </div>
+              </div>
+            </div>
+          </header>
+        <!-- Content Section -->
+        <main class="flex-grow bg-white shadow-md m-2">
+            <!-- -------------------#-------------------Middle Section---------------------#--------------------- -->
+            <div class="mx-auto">
+                <div class="bg-white p-4 shadow-lg">
+                    <div class="flex flex-col items-center min-h-screen">
+                        <div class="text-center md:text-left flex flex-col items-center">
+                            <hr class="my-2 border-t-2 w-12 border-gray-200" />
+                            <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]">
+                                Sponsorship Opportunities
+                            </h1>
+                        </div>
+                        <!-- -------------------------Table------------------------------------ -->
+                        <div class="container mx-auto mt-8 overflow-hidden md:px-6">
+                            <div class="overflow-x-auto">
+                                <table class="w-full border-collapse border border-gray-300 shadow-lg">
+                                    <thead>
+                                        <tr class="bg-[#068bb4] text-white text-sm sm:text-base">
+                                            <th class="p-2 border border-gray-300">Sponsorship</th>
+                                            <th class="p-2 border border-gray-300">Sponsorship Amount (INR)</th>
+                                            <th class="p-2 border border-gray-300">Free Delegates</th>
+                                            <th class="p-2 border border-gray-300">Promotion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white text-center text-sm sm:text-base">
+                                        <tr class="border border-gray-300 bg-gray-100">
+                                            <td class="p-2 font-bold">Platinum</td>
+                                            <td class="p-2">Rs. 5,00,000</td>
+                                            <td class="p-2">5</td>
+                                            <td class="p-2">15 minutes video</td>
+                                        </tr>
+                                        <tr class="border border-gray-300">
+                                            <td class="p-2 font-bold">Gold</td>
+                                            <td class="p-2">Rs. 3,00,000</td>
+                                            <td class="p-2">4</td>
+                                            <td class="p-2">10 minutes Video</td>
+                                        </tr>
+                                        <tr class="border border-gray-300 bg-gray-100">
+                                            <td class="p-2 font-bold">Silver</td>
+                                            <td class="p-2">Rs. 1,00,000</td>
+                                            <td class="p-2">3</td>
+                                            <td class="p-2">5 minutes Video</td>
+                                        </tr>
+                                        <tr class="border border-gray-300">
+                                            <td class="p-2 font-bold">Bronze</td>
+                                            <td class="p-2">Rs. 50,000</td>
+                                            <td class="p-2">2</td>
+                                            <td class="p-2">5 minutes Video</td>
+                                        </tr>
+                                        <tr class="border border-gray-300 bg-gray-100">
+                                            <td class="p-2 font-bold">Well Wisher</td>
+                                            <td class="p-2">Rs. 25,000</td>
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">No Video</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-6">
+                                <p class="text-center">
+                                    Exclusive use of Display Lounge for product showcase and logo
+                                    display on the conference site and banner for all sponsors.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Back to Top Button -->
+                <button id="back-to-top"
+                    class="fixed z-50 bottom-4 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md duration-300 opacity-0 pointer-events-none transition-all ease-in-out text-sm"
+                    aria-label="Back to top">
+                    <i class="fas fa-chevron-up text-sm"></i>
+                    <!-- Increased icon size -->
+                </button>
+            </div>
+        </main>
+        <!-- Footer -->
+        <div id="footer"></div>
+    </div>
+    <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black opacity-50 z-30 lg:hidden"></div>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advisory Board</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/global.css" />
+  </head>
+
+  <body class="flex">
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <div class="flex-col w-full lg:ml-64">
+      <!-- Header -->
+      <header
+        class="relative min-h-[30vh] shadow-md bg-gray-200 flex justify-center items-center"
+      >
+        <!-- Background Image with Opacity -->
+        <div
+          class="absolute inset-0 bg-hero bg-cover bg-center opacity-30"
+        ></div>
+        <button
+          id="toggle-sidebar"
+          class="lg:hidden absolute top-4 left-0 bg-[#068bb4] text-white p-2 rounded-lg z-40 ml-4"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Content -->
+        <div class="relative z-10">
+          <div
+            class="container mx-auto flex justify-center flex-col gap-2 p-2 lg:flex-row items-center px-12"
+          >
+            <a href="../index.html"
+              ><img
+                src="../assets/images/logo.png"
+                alt="Conference Logo"
+                class="w-48 md:54 lg:w-60"
+            /></a>
+            <div
+              class="text-center lg:text-left flex flex-col gap-2 items-center lg:items-end px-2"
+            >
+              <h1
+                class="text-3xl lg:text-4xl bg-gradient-to-b from-[#027fc7] to-[#24509c] text-transparent bg-clip-text font-bold lg:text-end"
+              >
+                <span> National </span> <span> Conference on </span>
+                <span>Wind Engineering</span>
+                <!-- National Conference on Wind Engineering -->
+                <div>
+                  <span class="block lg:inline font-black">(NCWE-2025)</span>
+                </div>
+              </h1>
+              <p
+                class="text-lg lg:w-80 bg-blue-900 lg:text-end px-2 text-white p-1 rounded-lg lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-none lg:text-xl lg:rounded-tl-3xl font-black mt-2 text-center"
+              >
+                14<sup>th</sup> & 15<sup>th</sup> November 2025
+              </p>
+              <p
+                class="text-xl lg:text-2xl text-gray-800 lg:text-end font-medium"
+              >
+                Department of Applied Mechanics, VNIT Nagpur
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="flex-grow bg-white shadow-md m-2">
+        <div class="mx-auto">
+          <div class="bg-white p-6 shadow-lg">
+            <div class="flex flex-col items-center min-h-screen">
+              <div class="text-center md:text-left flex flex-col items-center">
+                <hr class="my-2 border-t-2 w-12 border-gray-200" />
+                <h1
+                  class="text-2xl md:text-3xl font-medium text-center text-[#068bb4]"
+                >
+                  Advisory Board
+                </h1>
+              </div>
+              <!-- -------------------------Table------------------------------------ -->
+              <div class="flex items-center mx-auto mt-6 overflow-hidden">
+                <div class="overflow-x-auto">
+                  <!-- Table for Desktop -->
+                  <table
+                    class="hidden sm:table border-2 border-gray-200 min-w-full bg-white"
+                  >
+                    <tbody>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Claudio Borri
+                        </td>
+                        <td class="py-2 px-4">
+                          President - IAWE, University of Florence, Italy
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Prem Krishna
+                        </td>
+                        <td class="py-2 px-4">
+                          Former Professor, IIT Roorkee & Former Vice President
+                          INAE, Former President - IAWE
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Shuyang Cao
+                        </td>
+                        <td class="py-2 px-4">
+                          Vice President - IAWE, Tongji University, China
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Prof. Mahesh Tandon
+                        </td>
+                        <td class="py-2 px-4">President, ISWE</td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Anandavalli N
+                        </td>
+                        <td class="py-2 px-4">Director, SERC Chennai</td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. R. Pradeep Kumar
+                        </td>
+                        <td class="py-2 px-4">Director, CBRI Roorkee</td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. P. Harikrishna
+                        </td>
+                        <td class="py-2 px-4">
+                          Principal Scientist, SERC Chennai
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Deepankar Choudhury
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Bombay
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Yogesh Desai
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Bombay
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. R. N. Dubey
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT
+                          Roorkee
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Rupen Goswami
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Madras
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Abhay Gupta
+                        </td>
+                        <td class="py-2 px-4">
+                          Directors, Skeleton Consultants Pvt. Ltd
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. L. M. Gupta
+                        </td>
+                        <td class="py-2 px-4">
+                          Former Professor, Applied Mechanics Department, VNIT
+                          Nagpur
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Rajeev Gupta
+                        </td>
+                        <td class="py-2 px-4">
+                          Chief Engineer, National Wind Tunnel Facility, IIT
+                          Kanpur
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Vinay Kumar Gupta
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Kanpur
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. O. R. Jaiswal
+                        </td>
+                        <td class="py-2 px-4">Director, NIT GOA</td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. R. S. Jangid
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Bombay
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Vasant Matsagar
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Delhi
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. S Mandal
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT BHU
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. C. S. Manohar
+                        </td>
+                        <td class="py-2 px-4">
+                          Former Professor, Indian Institute of Science,
+                          Bangalore
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Sudib Kumar Mishra
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Kanpur
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Achal Kumar Mittal
+                        </td>
+                        <td class="py-2 px-4">Chief Scientist, CSIR-CBRI</td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. K. Murali
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Ocean Engineering, IIT Madras
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Mr. P. S. Patankar
+                        </td>
+                        <td class="py-2 px-4">
+                          Director, Chief Structural Engineer, Patankar
+                          Consultants Pvt. Ltd. Nagpur
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. P. D. Porey
+                        </td>
+                        <td class="py-2 px-4">Formal Director SVNIT, Surat</td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. G. R. Reddy
+                        </td>
+                        <td class="py-2 px-4">
+                          Emeritus Professor, Applied Mechanics Department, VNIT
+                          Nagpur
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Dipti Ranjan Sahoo
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Delhi
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. S.A. Sannasiraj
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Ocean Engineering, IIT Madras
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. M. K. Shrimali
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, MNIT
+                          Jaipur
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Yogendra Singh
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT
+                          Roorkee
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Ravi Sinha
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Department of Civil Engineering, IIT Bombay
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Prof. Gang HU
+                        </td>
+                        <td class="py-2 px-4">
+                          Professor, Harbin Institute of Technology, Shenzhen,
+                          China
+                        </td>
+                      </tr>
+                      <tr class="bg-[#def0fc]">
+                        <td class="py-2 px-4 text-lg font-medium">
+                          Dr. Manoj Rajak
+                        </td>
+                        <td class="py-2 px-4">
+                          Scientist-D, Bureau of Indian Standard
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!-- Mobile View: Cards -->
+                  <div class="sm:hidden space-y-4 p-4">
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Claudio Borri</p>
+                      <p class="text-gray-700">
+                        President - IAWE, University of Florence, Italy
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Prem Krishna</p>
+                      <p class="text-gray-700">
+                        Former Professor, IIT Roorkee & Former Vice President
+                        INAE, Former President - IAWE
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Shuyang Cao</p>
+                      <p class="text-gray-700">
+                        Vice President - IAWE, Tongji University, China
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Prof. Mahesh Tandon</p>
+                      <p class="text-gray-700">President, ISWE</p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Anandavalli N</p>
+                      <p class="text-gray-700">Director, SERC Chennai</p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. R. Pradeep Kumar</p>
+                      <p class="text-gray-700">Director, CBRI Roorkee</p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. P. Harikrishna</p>
+                      <p class="text-gray-700">
+                        Principal Scientist, SERC Chennai
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Deepankar Choudhury</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Bombay
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Yogesh Desai</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Bombay
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. R. N. Dubey</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Roorkee
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Rupen Goswami</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Madras
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Abhay Gupta</p>
+                      <p class="text-gray-700">
+                        Directors, Skeleton Consultants Pvt. Ltd
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. L. M. Gupta</p>
+                      <p class="text-gray-700">
+                        Former Professor, Applied Mechanics Department, VNIT
+                        Nagpur
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Rajeev Gupta</p>
+                      <p class="text-gray-700">
+                        Chief Engineer, National Wind Tunnel Facility, IIT
+                        Kanpur
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Vinay Kumar Gupta</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Kanpur
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. O. R. Jaiswal</p>
+                      <p class="text-gray-700">Director, NIT GOA</p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. R. S. Jangid</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Bombay
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Vasant Matsagar</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Delhi
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. S Mandal</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT BHU
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. C. S. Manohar</p>
+                      <p class="text-gray-700">
+                        Former Professor, Indian Institute of Science, Bangalore
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Sudib Kumar Mishra</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Kanpur
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Achal Kumar Mittal</p>
+                      <p class="text-gray-700">Chief Scientist, CSIR-CBRI</p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. K. Murali</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Ocean Engineering, IIT Madras
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Mr. P. S. Patankar</p>
+                      <p class="text-gray-700">
+                        Director, Chief Structural Engineer, Patankar
+                        Consultants Pvt. Ltd. Nagpur
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. P. D. Porey</p>
+                      <p class="text-gray-700">Formal Director SVNIT, Surat</p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. G. R. Reddy</p>
+                      <p class="text-gray-700">
+                        Emeritus Professor, Applied Mechanics Department, VNIT
+                        Nagpur
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Dipti Ranjan Sahoo</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Delhi
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. S.A. Sannasiraj</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Ocean Engineering, IIT Madras
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. M. K. Shrimali</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, MNIT Jaipur
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Yogendra Singh</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Roorkee
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Ravi Sinha</p>
+                      <p class="text-gray-700">
+                        Professor, Department of Civil Engineering, IIT Bombay
+                      </p>
+                    </div>
+                    <div class="p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Prof. Gang HU</p>
+                      <p class="text-gray-700">
+                        Professor, Harbin Institute of Technology, Shenzhen,
+                        China
+                      </p>
+                    </div>
+                    <div class="bg-[#def0fc] p-4 rounded-lg shadow-md">
+                      <p class="text-lg font-medium">Dr. Manoj Rajak</p>
+                      <p class="text-gray-700">
+                        Scientist-D, Bureau of Indian Standard
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Back to Top Button -->
+          <button
+            id="back-to-top"
+            class="fixed z-50 bottom-4 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md duration-300 opacity-0 pointer-events-none transition-all ease-in-out text-sm"
+            aria-label="Back to top"
+          >
+            <i class="fas fa-chevron-up text-sm"></i>
+            <!-- Increased icon size -->
+          </button>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <div id="footer"></div>
+    </div>
+    <div
+      id="sidebar-overlay"
+      class="hidden fixed inset-0 bg-black opacity-50 z-30 lg:hidden"
+    ></div>
+    <script src="../script.js"></script>
+  </body>
+</html>

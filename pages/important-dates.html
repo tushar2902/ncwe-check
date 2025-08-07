@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Important Dates</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/global.css" />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 2s ease-out;
+      }
+
+      .fade-out {
+        animation: fadeOut 0.6s ease-in;
+      }
+
+      /* Responsive styling */
+      #date-extension-banner {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        word-break: break-word;
+      }
+
+      @media (max-width: 480px) {
+        #date-extension-banner {
+          font-size: 0.9rem;
+          padding: 0.6rem 0.8rem;
+        }
+
+        #date-extension-banner button {
+          font-size: 1.2rem;
+        }
+      }
+      .btn-close {
+        color: #dc2626;
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!-- Sidebar (Included in all pages) -->
+    <div id="sidebar-container"></div>
+
+    <div class="flex-col w-full lg:ml-64">
+      <!-- Header -->
+      <header
+        class="relative min-h-[30vh] shadow-md bg-gray-200 flex justify-center items-center"
+      >
+        <!-- Background Image with Opacity -->
+        <div
+          class="absolute inset-0 bg-hero bg-cover bg-center opacity-30"
+        ></div>
+        <button
+          id="toggle-sidebar"
+          class="lg:hidden absolute top-4 left-0 bg-[#068bb4] text-white p-2 rounded-lg z-40 ml-4"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Content -->
+        <div class="relative z-10">
+          <div
+            class="container mx-auto flex justify-center flex-col gap-2 p-2 lg:flex-row items-center px-12"
+          >
+            <a href="../index.html"
+              ><img
+                src="../assets/images/logo.png"
+                alt="Conference Logo"
+                class="w-48 md:54 lg:w-60"
+            /></a>
+            <div
+              class="text-center lg:text-left flex flex-col gap-2 items-center lg:items-end px-2"
+            >
+              <h1
+                class="text-3xl lg:text-4xl bg-gradient-to-b from-[#027fc7] to-[#24509c] text-transparent bg-clip-text font-bold lg:text-end"
+              >
+                <span> National </span> <span> Conference on </span>
+                <span>Wind Engineering</span>
+                <!-- National Conference on Wind Engineering -->
+                <div>
+                  <span class="block lg:inline font-black">(NCWE-2025)</span>
+                </div>
+              </h1>
+              <p
+                class="text-lg lg:w-80 bg-blue-900 lg:text-end px-2 text-white p-1 rounded-lg lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-none lg:text-xl lg:rounded-tl-3xl font-black mt-2 text-center"
+              >
+                14<sup>th</sup> & 15<sup>th</sup> November 2025
+              </p>
+              <p
+                class="text-xl lg:text-2xl text-gray-800 lg:text-end font-medium"
+              >
+                Department of Applied Mechanics, VNIT Nagpur
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Content Section -->
+      <main class="flex-grow bg-white shadow-md m-2">
+        <!-- -------------------#-------------------Middle Section---------------------#--------------------- -->
+        <div class="mx-auto">
+          <div class="bg-white p-6 shadow-lg">
+            <div class="flex flex-col items-center min-h-screen">
+              <div class="text-center md:text-left flex flex-col items-center">
+                <!-- Date Extension Banner -->
+                <div
+                  id="date-extension-banner"
+                  class="fade-in bg-yellow-300 text-black relative shadow-md rounded-md mb-4 w-full max-w-xl mx-auto"
+                  style="padding: 1rem 2.5rem 1rem 1rem; font-size: 1rem"
+                >
+                  <strong>📢 Update:</strong> Abstract Submission Deadline has
+                  been extended to <strong>20<sup>th</sup> August 2025</strong>
+
+                  <!-- Close button at corner of banner -->
+                  <button
+                    onclick="fadeOutBanner()"
+                    aria-label="Close banner"
+                    style="
+                      position: absolute;
+                      top: 10px;
+                      right: 10px;
+                      background: transparent;
+                      border: none;
+                      font-size: 1.25rem;
+                      font-weight: bold;
+                      color: #dc2626;
+                      cursor: pointer;
+                      line-height: 1;
+                    "
+                  >
+                    ×
+                  </button>
+                </div>
+
+                <hr class="my-2 border-t-2 w-12 border-gray-200" />
+                <h1
+                  class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]"
+                >
+                  Important Dates
+                </h1>
+              </div>
+              <div
+                class="w-full max-w-md m-8 p-6 bg-[#068bb4] text-white rounded-xl shadow-lg"
+              >
+                <div class="space-y-4 text-center flex flex-col items-center">
+                  <div>
+                    <p class="text-lg md:text-xl">
+                      Abstract Submission Deadline
+                    </p>
+                    <p class="font-bold md:text-xl text-lg mt-1">
+                      20<sup>th</sup> August, 2025
+                      <span class="text-sm">[150 words]</span>
+                    </p>
+                  </div>
+                  <hr class="w-full border-t-2 border-dashed border-white" />
+                  <div>
+                    <p class="text-lg md:text-xl">Registration Deadline</p>
+                    <p class="font-bold md:text-xl text-lg mt-1">
+                      15<sup>th</sup> September, 2025
+                    </p>
+                  </div>
+                  <hr class="w-full border-t-2 border-dashed border-white" />
+                  <div>
+                    <p class="text-lg md:text-xl">
+                      Camera Ready Paper Submission
+                    </p>
+                    <p class="font-bold md:text-xl text-lg mt-1">
+                      30<sup>th</sup> September, 2025
+                      <span class="text-md">(6-7 Pages)</span>
+                    </p>
+                  </div>
+                  <hr class="w-48 border-t-2 border-dashed border-white" />
+                  <div>
+                    <p class="text-lg md:text-xl">Conference Dates</p>
+                    <p class="font-bold md:text-xl text-lg mt-1">
+                      November 14 - 15, 2025
+                    </p>
+                  </div>
+                  <hr class="w-full border-t-2 border-dashed border-white" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Back to Top Button -->
+          <button
+            id="back-to-top"
+            class="fixed z-50 bottom-4 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md duration-300 opacity-0 pointer-events-none transition-all ease-in-out text-sm"
+            aria-label="Back to top"
+          >
+            <i class="fas fa-chevron-up text-sm"></i>
+            <!-- Increased icon size -->
+          </button>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <div id="footer"></div>
+    </div>
+    <div
+      id="sidebar-overlay"
+      class="hidden fixed inset-0 bg-black opacity-50 z-30 lg:hidden"
+    ></div>
+    <script src="../script.js"></script>
+    <script>
+      function fadeOutBanner() {
+        const banner = document.getElementById("date-extension-banner");
+        banner.classList.remove("fade-in");
+        banner.classList.add("fade-out");
+        setTimeout(() => {
+          banner.style.display = "none";
+        }, 500); // match animation duration
+      }
+    </script>
+  </body>
+</html>
