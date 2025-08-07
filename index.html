@@ -20,41 +20,96 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
+      /* Popup Overlay */
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+
+      /* Popup Content */
+      .popup-content {
+        background-color: #fff;
+        padding: 24px;
+        border-radius: 10px;
+        position: relative;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Close Button */
+      .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #666;
+        cursor: pointer;
+      }
+
+      .popup-close:hover {
+        color: #ff0000;
+      }
+
+      /* Heading */
+      .popup-heading {
+        font-size: 18px;
+        font-weight: bold;
+        color: #068bb4;
+        margin-bottom: 12px;
+      }
+
+      /* Message */
+      .popup-message {
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      /* Button */
+      .popup-button {
+        background-color: #068bb4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .popup-button:hover {
+        background-color: #056f91;
+      }
     </style>
   </head>
 
   <body class="home-page flex bg-gray-100">
     <!-- Abstract Submission Deadline Popup -->
-    <div
-      id="update-popup"
-      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
-    >
-      <div class="bg-white w-[90%] max-w-md p-6 rounded-xl shadow-xl relative">
-        <!-- Close Button -->
-        <button
-          id="close-popup"
-          class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl font-bold"
-        >
-          &times;
-        </button>
-        <!-- Message -->
-        <h2
-          class="text-lg md:text-xl font-semibold text-[#068bb4] text-center mb-4"
-        >
+    <div id="update-popup" class="popup-overlay" style="display: none">
+      <div class="popup-content">
+        <button id="close-popup" class="popup-close">&times;</button>
+        <h2 class="popup-heading">
           Update: Abstract Submission Deadline Extended!
         </h2>
-        <p class="text-center text-gray-700 mb-6">
+        <p class="popup-message">
           Abstract submission deadline has been extended to
           <strong>20th August 2025</strong>.
         </p>
-        <!-- Button -->
-        <div class="text-center">
+        <div class="popup-actions">
           <a href="pages/important-dates.html">
-            <button
-              class="bg-[#068bb4] text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-all"
-            >
-              View Important Dates
-            </button>
+            <button class="popup-button">View Important Dates</button>
           </a>
         </div>
       </div>
@@ -682,18 +737,20 @@
       // Initialize sidebar on first page load
       document.addEventListener("DOMContentLoaded", initDropdowns);
 
-      // Show update popup on page load
-      window.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
         const popup = document.getElementById("update-popup");
         const closeBtn = document.getElementById("close-popup");
 
-        // Show popup
-        popup.classList.remove("hidden");
+        if (!sessionStorage.getItem("popup-shown") && popup && closeBtn) {
+          // Show the popup
+          popup.style.display = "flex";
+          sessionStorage.setItem("popup-shown", "true");
 
-        // Close popup
-        closeBtn.addEventListener("click", function () {
-          popup.classList.add("hidden");
-        });
+          // Close on click
+          closeBtn.addEventListener("click", function () {
+            popup.style.display = "none";
+          });
+        }
       });
     </script>
   </body>
