@@ -11,54 +11,6 @@
     />
     <link rel="stylesheet" href="../assets/style.css" />
     <link rel="stylesheet" href="../assets/global.css" />
-    <style>
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      @keyframes fadeOut {
-        from {
-          opacity: 1;
-        }
-        to {
-          opacity: 0;
-        }
-      }
-
-      .fade-in {
-        animation: fadeIn 2s ease-out;
-      }
-
-      .fade-out {
-        animation: fadeOut 0.6s ease-in;
-      }
-
-      /* Responsive styling */
-      #date-extension-banner {
-        font-size: 1rem;
-        padding: 0.75rem 1rem;
-        word-break: break-word;
-      }
-
-      @media (max-width: 480px) {
-        #date-extension-banner {
-          font-size: 0.9rem;
-          padding: 0.6rem 0.8rem;
-        }
-
-        #date-extension-banner button {
-          font-size: 1.2rem;
-        }
-      }
-      .btn-close {
-        color: #dc2626;
-      }
-    </style>
   </head>
 
   <body class="flex">
@@ -125,36 +77,6 @@
           <div class="bg-white p-6 shadow-lg">
             <div class="flex flex-col items-center min-h-screen">
               <div class="text-center md:text-left flex flex-col items-center">
-                <!-- Date Extension Banner -->
-                <div
-                  id="date-extension-banner"
-                  class="fade-in bg-yellow-300 text-black relative shadow-md rounded-md mb-4 w-full max-w-xl mx-auto"
-                  style="padding: 1rem 2.5rem 1rem 1rem; font-size: 1rem"
-                >
-                  <strong>📢 Update:</strong> Abstract Submission Deadline has
-                  been extended to <strong>20<sup>th</sup> August 2025</strong>
-
-                  <!-- Close button at corner of banner -->
-                  <button
-                    onclick="fadeOutBanner()"
-                    aria-label="Close banner"
-                    style="
-                      position: absolute;
-                      top: 10px;
-                      right: 10px;
-                      background: transparent;
-                      border: none;
-                      font-size: 1.25rem;
-                      font-weight: bold;
-                      color: #dc2626;
-                      cursor: pointer;
-                      line-height: 1;
-                    "
-                  >
-                    ×
-                  </button>
-                </div>
-
                 <hr class="my-2 border-t-2 w-12 border-gray-200" />
                 <h1
                   class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]"
@@ -224,15 +146,5 @@
       class="hidden fixed inset-0 bg-black opacity-50 z-30 lg:hidden"
     ></div>
     <script src="../script.js"></script>
-    <script>
-      function fadeOutBanner() {
-        const banner = document.getElementById("date-extension-banner");
-        banner.classList.remove("fade-in");
-        banner.classList.add("fade-out");
-        setTimeout(() => {
-          banner.style.display = "none";
-        }, 500); // match animation duration
-      }
-    </script>
   </body>
 </html>
